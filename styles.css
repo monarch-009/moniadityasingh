@@ -464,7 +464,6 @@ body {
 [data-theme="dark"] .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
 .coding-platforms-container {
   display: flex;
   justify-content: center;
@@ -557,117 +556,785 @@ body {
 [data-theme="dark"] .coding-link:nth-child(5) { color: #fff; }
 [data-theme="dark"] .coding-link:nth-child(8) { color: #fff; }
 
+
+
 /* ===================== Responsive Design ===================== */
 
-/* Medium Devices (Tablets, 768px and down) */
-@media (max-width: 768px) {
+/* ===================== RESPONSIVE CSS EXTENSION ===================== */
+/* Add this CSS file after your main CSS file */
+/* This file adds responsive behavior without modifying existing styles */
+
+/* Extra Large Devices (Large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .container {
-    padding: 30px 15px;
+    max-width: 1000px;
   }
-
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
   .header h1 {
-    font-size: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 3rem;
   }
+  
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+  }
+}
 
+/* Large Devices (Desktops, 992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    padding: 35px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
   .profile-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 25px;
   }
-
-  .profile-text {
-    text-align: center;
-  }
-
+  
   .profile-image {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
   }
-
+  
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
+  
+  .experience-item,
+  .education-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .company-logo,
+  .edu-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-links {
+    gap: 15px;
+    padding: 10px 18px;
+  }
+  
+  .coding-platforms {
+    gap: 15px;
+    padding: 12px 20px;
+  }
+  
+  .coding-link {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}
 
+/* Small Medium Devices (Small tablets, 576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .container {
+    padding: 30px 20px;
+  }
+  
+  .header {
+    margin-bottom: 50px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
   .experience-item,
   .education-item {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 15px;
   }
-
-  .experience-content,
-  .education-content {
-    text-align: center;
-  }
-
+  
   .company-logo,
   .edu-logo {
     margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
   }
-
+  
   .date-range {
     float: none;
-    display: block;
-    margin-top: 5px;
+    text-align: center;
+    margin-top: 8px;
   }
-
+  
   .skills-container {
     justify-content: center;
   }
-}
-
-/* Small Devices (Phones, 480px and down) */
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.75rem;
+  
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
-
-  .section h2 {
-    font-size: 1.25rem;
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-
-  .intro-text,
-  .projects-subtitle,
-  .project-description,
-  .contact-text {
-    font-size: 1rem;
+  
+  .project-image {
+    height: 180px;
+    font-size: 1.1rem;
   }
-
+  
+  .project-content {
+    padding: 18px;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .projects-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-section {
+    margin-top: 60px;
+    padding: 30px 15px;
+  }
+  
   .social-links {
     gap: 12px;
-    padding: 10px 16px;
+    padding: 8px 15px;
   }
-
+  
   .social-link {
-    font-size: 18px;
     width: 32px;
     height: 32px;
+    font-size: 16px;
   }
+  
+  .coding-platforms {
+    gap: 12px;
+    padding: 10px 18px;
+  }
+  
+  .coding-link {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
 
+/* Small Devices (Phones, 480px to 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .container {
+    padding: 25px 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  
+  .profile-image {
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+  }
+  
+  .intro-text {
+    font-size: 0.95rem;
+  }
+  
+  .section {
+    margin-bottom: 35px;
+  }
+  
+  .section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .experience-item,
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo,
+  .edu-logo {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  
+  .experience-title,
+  .education-title {
+    font-size: 0.95rem;
+  }
+  
+  .company-name,
+  .university-name {
+    font-size: 0.85rem;
+  }
+  
+  .date-range {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .skill-tag {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .projects-header {
+    margin-bottom: 30px;
+  }
+  
+  .projects-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  
+  .projects-title {
+    font-size: 1.6rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 0.95rem;
+  }
+  
   .project-image {
-    height: 160px;
+    height: 150px;
+    font-size: 0.95rem;
+  }
+  
+  .project-content {
+    padding: 15px;
+  }
+  
+  .project-title {
     font-size: 1rem;
   }
-
-  .project-content {
-    padding: 16px;
+  
+  .project-description {
+    font-size: 0.85rem;
   }
-
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  
   .project-link {
     font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+  
+  .contact-section {
+    margin-top: 50px;
+    padding: 25px 10px;
+  }
+  
+  .contact-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  
+  .contact-text {
+    font-size: 0.95rem;
+  }
+  
+  .social-links-container {
+    bottom: 15px;
+  }
+  
+  .social-links {
+    gap: 10px;
     padding: 6px 12px;
   }
-
-  .contact-title,
-  .projects-title {
-    font-size: 1.5rem;
+  
+  .social-link {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
-
+  
   .theme-toggle {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  .coding-platforms-container {
+    margin-top: 15px;
+  }
+  
+  .coding-platforms {
+    gap: 10px;
+    padding: 8px 15px;
+  }
+  
+  .coding-link {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Devices (Small phones, 320px to 479px) */
+@media (max-width: 479px) {
+  .container {
+    padding: 20px 10px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+  
+  .intro-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .experience-item,
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .company-logo,
+  .edu-logo {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+  
+  .experience-title,
+  .education-title {
+    font-size: 0.9rem;
+  }
+  
+  .company-name,
+  .university-name {
+    font-size: 0.8rem;
+  }
+  
+  .date-range {
+    font-size: 0.75rem;
+    margin-top: 4px;
+  }
+  
+  .skills-container {
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .skill-tag {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .projects-header {
+    margin-bottom: 25px;
+  }
+  
+  .projects-badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+  
+  .projects-title {
+    font-size: 1.4rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .projects-grid {
+    gap: 15px;
+  }
+  
+  .project-image {
+    height: 130px;
+    font-size: 0.9rem;
+  }
+  
+  .project-content {
+    padding: 12px;
+  }
+  
+  .project-title {
+    font-size: 0.95rem;
+  }
+  
+  .project-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .project-tech {
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .tech-tag {
+    font-size: 0.65rem;
+    padding: 2px 5px;
+  }
+  
+  .project-links {
+    gap: 6px;
+  }
+  
+  .project-link {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+  
+  .contact-section {
+    margin-top: 40px;
+    padding: 20px 8px;
+  }
+  
+  .contact-badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+  
+  .contact-title {
+    font-size: 1.4rem;
+  }
+  
+  .contact-text {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  .social-links-container {
+    bottom: 10px;
+  }
+  
+  .social-links {
+    gap: 8px;
+    padding: 4px 10px;
+  }
+  
+  .social-link {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+  
+  .theme-toggle {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+  
+  .coding-platforms-container {
+    margin-top: 12px;
+  }
+  
+  .coding-platforms {
+    gap: 8px;
+    padding: 6px 12px;
+  }
+  
+  .coding-link {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+}
+
+/* Ultra Small Devices (Very small phones, below 320px) */
+@media (max-width: 319px) {
+  .container {
+    padding: 15px 8px;
+  }
+  
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .profile-image {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .intro-text {
+    font-size: 0.85rem;
+  }
+  
+  .section h2 {
+    font-size: 1rem;
+  }
+  
+  .experience-item,
+  .education-item {
+    padding: 8px;
+  }
+  
+  .company-logo,
+  .edu-logo {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .skill-tag {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+  
+  .projects-title,
+  .contact-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-image {
+    height: 120px;
+    font-size: 0.8rem;
+  }
+  
+  .project-content {
+    padding: 10px;
+  }
+  
+  .social-links {
+    gap: 6px;
+    padding: 3px 8px;
+  }
+  
+  .social-link {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+  
+  .theme-toggle {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+  
+  .coding-platforms {
+    gap: 6px;
+    padding: 5px 10px;
+  }
+  
+  .coding-link {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
+/* Landscape orientation adjustments for small devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .social-links-container {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-top: 30px;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    margin-bottom: 25px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .social-links-container,
+  .coding-platforms-container,
+  .theme-toggle {
+    display: none !important;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .project-card,
+  .experience-item,
+  .education-item {
+    break-inside: avoid;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* High DPI/Retina display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .profile-image,
+  .company-logo,
+  .edu-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Accessibility improvements for small screens */
+@media (max-width: 767px) {
+  .social-link,
+  .coding-link,
+  .theme-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .project-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-tag {
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .social-links-container:hover .social-links,
+  .coding-platforms-container:hover .coding-platforms,
+  .social-link:hover,
+  .coding-link:hover,
+  .theme-toggle:hover,
+  .skill-tag:hover,
+  .project-card:hover,
+  .experience-item:hover,
+  .education-item:hover {
+    transform: none;
   }
 }

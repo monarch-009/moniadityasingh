@@ -358,7 +358,7 @@ body {
 
 .social-links-container:hover .social-links {
   /* transform: translateY(-2px); */
-    transform: scale(1.05);
+  transform: scale(1.05);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -416,14 +416,14 @@ body {
   color: #333;
 } /* GitHub */
 .social-link:nth-child(3) {
-  color: #0077b5;
+  color: #333;
 } /* LinkedIn */
 .social-link:nth-child(4) {
-  color: #000;
-} /* X/Twitter */
+  color: #222;
+} /* Email */
 .social-link:nth-child(5) {
-  color: #ff0000;
-} /* YouTube */
+  color: #333;
+} /* X/Twitter */
 
 [data-theme="dark"] .social-link:nth-child(1) {
   color: #ccc;
@@ -431,7 +431,13 @@ body {
 [data-theme="dark"] .social-link:nth-child(2) {
   color: #fff;
 }
+[data-theme="dark"] .social-link:nth-child(3) {
+  color: #fff;
+}
 [data-theme="dark"] .social-link:nth-child(4) {
+  color: #fff;
+}
+[data-theme="dark"] .social-link:nth-child(5) {
   color: #fff;
 }
 
@@ -459,35 +465,97 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 20px 15px;
-  }
-
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .profile-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .experience-item,
-  .education-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .date-range {
-    float: none;
-    margin-top: 10px;
-  }
+.coding-platforms-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+.coding-platforms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  background: #f8f9fa;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+}
+
+.coding-platforms-container:hover .coding-platforms {
+  transform: scale(1.05); /* Expand on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .coding-platforms {
+  background: #2d2d2d;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.coding-link {
+  position: relative;
+  color: #666;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.coding-link:hover {
+  transform: scale(1.2);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .coding-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Tooltip styling */
+.coding-link span {
+  position: absolute;
+  bottom: 120%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.coding-link:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-theme="dark"] .coding-link span {
+  background: rgba(255, 255, 255, 0.15);
+  color: #eee;
+}
+
+/* Platform-specific colors */
+.coding-link:nth-child(1) { color: #ffa116; } /* LeetCode */
+.coding-link:nth-child(2) { color: #00ea64; } /* HackerRank */
+.coding-link:nth-child(3) { color: #5b4638; } /* CodeChef */
+.coding-link:nth-child(4) { color: #1f8acb; } /* Codeforces */
+.coding-link:nth-child(5) { color: #333; }    /* GitHub */
+.coding-link:nth-child(6) { color: #f48024; } /* Stack Overflow */
+.coding-link:nth-child(7) { color: #0f9d58; } /* GeeksforGeeks */
+.coding-link:nth-child(8) { color: #000; }    /* CodePen */
+
+[data-theme="dark"] .coding-link:nth-child(5) { color: #fff; }
+[data-theme="dark"] .coding-link:nth-child(8) { color: #fff; }
 
 /* ===================== Responsive Design ===================== */
 

@@ -7,7 +7,7 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #333333;
-  --secondary-text: #666666;
+  --secondary-text: #555555;
   --card-bg: #f8f9fa;
   --border-color: #e9ecef;
   --accent-color: #007bff;
@@ -41,11 +41,13 @@ body {
 .header {
   text-align: left;
   margin-bottom: 60px;
+  /* margin-top: 50px; */
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  color: black;
   margin-bottom: 20px;
   display: flex;
   align-items: center;

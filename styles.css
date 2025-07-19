@@ -111,14 +111,14 @@ body {
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
 }
+
 .experience-item,
 .education-item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
   align-items: center;
-  gap: 20px; /* spacing between logo and content */
+  gap: 20px; 
   padding: 16px;
   border-radius: 12px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -429,16 +429,16 @@ body {
 } /* Home */
 .social-link:nth-child(2) {
   color: #333;
-} /* GitHub */
+} /* LinkedIn */
 .social-link:nth-child(3) {
   color: #333;
-} /* LinkedIn */
+} /* Email */
 .social-link:nth-child(4) {
   color: #222;
-} /* Email */
+} /* X */
 .social-link:nth-child(5) {
   color: #333;
-} /* X/Twitter */
+} /* Theam */
 
 [data-theme="dark"] .social-link:nth-child(1) {
   color: #ccc;
@@ -561,34 +561,31 @@ body {
 
 /* Platform-specific colors */
 .coding-link:nth-child(1) {
-  color: #ffa116;
-} /* LeetCode */
-.coding-link:nth-child(2) {
-  color: #00ea64;
-} /* HackerRank */
-.coding-link:nth-child(3) {
-  color: #5b4638;
-} /* CodeChef */
-.coding-link:nth-child(4) {
-  color: #1f8acb;
-} /* Codeforces */
-.coding-link:nth-child(5) {
   color: #333;
 } /* GitHub */
+.coding-link:nth-child(2) {
+  color: #ffa116;
+} /* LeetCode */
+.coding-link:nth-child(3) {
+  color: #00ea64;
+} /* HackerRank */
+.coding-link:nth-child(4) {
+  color: #5b4638;
+} /* CodeChef */
+.coding-link:nth-child(5) {
+  color: #1f8acb;
+} /* Codeforces */
 .coding-link:nth-child(6) {
-  color: #f48024;
-} /* Stack Overflow */
-.coding-link:nth-child(7) {
   color: #0f9d58;
 } /* GeeksforGeeks */
-.coding-link:nth-child(8) {
+.coding-link:nth-child(7) {
   color: #000;
 } /* CodePen */
 
-[data-theme="dark"] .coding-link:nth-child(5) {
+[data-theme="dark"] .coding-link:nth-child(1) {
   color: #fff;
 }
-[data-theme="dark"] .coding-link:nth-child(8) {
+[data-theme="dark"] .coding-link:nth-child(7) {
   color: #fff;
 }
 

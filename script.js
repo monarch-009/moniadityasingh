@@ -110,7 +110,16 @@ const addCopyButton = (type, value) => {
     copyBtn.onclick = () => copyToClipboard(value, type);
     
     const contactSection = document.querySelector('.contact-section');
-    contactSection?.appendChild(copyBtn);
+    
+    // Create or get buttons container
+    let buttonsContainer = contactSection?.querySelector('.contact-buttons');
+    if (!buttonsContainer) {
+        buttonsContainer = document.createElement('div');
+        buttonsContainer.className = 'contact-buttons';
+        contactSection?.appendChild(buttonsContainer);
+    }
+    
+    buttonsContainer.appendChild(copyBtn);
 };
 
 const copyToClipboard = async (text, type) => {
@@ -211,7 +220,16 @@ const initQuickShare = () => {
     shareBtn.addEventListener('click', showShareMenu);
     
     const contactSection = document.querySelector('.contact-section');
-    contactSection?.appendChild(shareBtn);
+    
+    // Create or get buttons container
+    let buttonsContainer = contactSection?.querySelector('.contact-buttons');
+    if (!buttonsContainer) {
+        buttonsContainer = document.createElement('div');
+        buttonsContainer.className = 'contact-buttons';
+        contactSection?.appendChild(buttonsContainer);
+    }
+    
+    buttonsContainer.appendChild(shareBtn);
 };
 
 const showShareMenu = async () => {

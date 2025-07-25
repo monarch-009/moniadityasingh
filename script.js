@@ -134,6 +134,15 @@ const copyToClipboard = async (text, type) => {
     }
 };
 
+// Smooth scroll to top function
+const scrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
 // Performance monitoring
 const initPerformanceMonitor = () => {
     window.addEventListener('load', () => {

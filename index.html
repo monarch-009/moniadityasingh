@@ -13,398 +13,58 @@
     />
     <meta name="author" content="Moniaditya Singh" />
     <title>Moniaditya Singh - Full Stack Developer</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
+    <div id="daily-quote-container" class="container"></div>
     <div class="container">
-      <!-- Header Section -->
-      <header class="header">
-        <div class="profile-section">
-          <div class="profile-text">
-            <h1>Hi, I'm Aditya 👋</h1>
-            <p class="intro-text">
-              I build apps, design for the web, and dabble in AI sorcery.
-              Interfaces? Smooth. Code? Sharp. Logic meets style—that’s how I
-              bring ideas alive. 🚀
-            </p>
-          </div>
-          <img
-            src="./images/img.jpg"
-            alt="Aditya's Profile"
-            class="profile-image"
-            loading="lazy"
-          />
-        </div>
-      </header>
-
-      <!-- About Section -->
-      <section class="section">
-        <h2>About</h2>
-        <p>
-          I code by day and dream by night, weaving logic and story gracefully.
-          I wander through books and history, finding inspiration in the stars.
-          Each algorithm becomes a poem of purpose, connecting structure with
-          wonder. I blend philosophy with software, art with technology, seeking
-          meaning in nature’s quiet patterns. Every project feels like exploring
-          the cosmos, where logic meets imagination. In code, I craft stories,
-          bridging reason with curiosity and finding beauty in every line. My
-          soul finds joy in the dance of code and words, weaving reason into
-          dreams.
-        </p>
-      </section>
-
-      <!-- Work Experience Section -->
-      <section class="section">
-        <h2>Work Experience</h2>
-
-        <div class="experience-item">
-          <img
-            src="./images/aws.PNG"
-            alt="AWS Cloud Club LPU"
-            class="company-logo"
-            loading="lazy"
-          />
-          <div class="experience-content">
-            <div class="experience-title">AWS Cloud Club LPU</div>
-            <div class="company-name">Web Dev Lead & Content Lead</div>
-            <div class="date-range">August 2024 - March 2025</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section class="section">
-        <h2>Education</h2>
-
-        <div class="education-item">
-          <img
-            src="./images/lpu logo.png"
-            alt="Lovely Professional University"
-            class="edu-logo"
-            loading="lazy"
-          />
-          <div class="education-content">
-            <div class="education-title">Lovely Professional University</div>
-            <div class="university-name">
-              Bachelor of Technology in Computer Science | Jalandhar | Punjab
-            </div>
-            <div class="date-range">2022 - 2026</div>
-          </div>
-        </div>
-
-        <div class="education-item">
-          <img
-            src="./images/school.PNG"
-            alt="St. John's Academy"
-            class="edu-logo"
-            style="width: auto"
-            loading="lazy"
-          />
-          <div class="education-content">
-            <div class="education-title">St. John's Academy</div>
-            <div class="university-name">
-              Secondary School & Senior Secondary | Mahua | Bihar
-            </div>
-            <div class="date-range">2018 - 2022</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section class="section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express.js</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Firebase</span>
-          <span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">Bootstrap</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">React-Native</span>
-          <span class="skill-tag">Android Studio</span>
-          <span class="skill-tag">Visual Studio</span>
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">DBMS</span>
-          <span class="skill-tag">Operating Systems</span>
-          <span class="skill-tag">Networking</span>
-          <span class="skill-tag">Data Structures & Algorithms</span>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="section">
-        <div class="projects-header">
-          <span class="projects-badge">My Projects</span>
-          <h2 class="projects-title">Check out my latest work</h2>
-          <p class="projects-subtitle">
-            I’ve explored everything from mobile screens to web
-            dashboards—built, broken, and rebuilt. There are many projects, each
-            a chapter in my tech journey.
-          </p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">Apps AI.UP</div>
-            <div class="project-content">
-              <h3 class="project-title">Apps AI.UP</h3>
-              <p class="project-description">
-                Developed an innovative React Chat application powered by
-                advanced AI to enhance user experience. The application offers
-                real-time messaging capabilities with intelligent responses,
-                creating a seamless and engaging communication platform.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">App Engine</span>
-                <span class="tech-tag">LLM from HF</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">Friendskit</div>
-            <div class="project-content">
-              <h3 class="project-title">Friendskit</h3>
-              <p class="project-description">
-                Developed a comprehensive social platform that connects people
-                and facilitates meaningful interactions. Features include user
-                profiles, messaging, content sharing, and community building
-                tools.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Tailwind</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i> Website
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">UI Kit</div>
-            <div class="project-content">
-              <h3 class="project-title">UI Kit</h3>
-              <p class="project-description">
-                Developed a comprehensive UI kit with reusable components for
-                modern web applications. The kit includes buttons, forms,
-                navigation elements, and complex components with consistent
-                design patterns.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Storybook</span>
-                <span class="tech-tag">CSS</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i> Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">CoverCraft</div>
-            <div class="project-content">
-              <h3 class="project-title">CoverCraft - Figma x Hashnode</h3>
-              <p class="project-description">
-                An innovative tool that bridges design and content creation by
-                generating beautiful cover images for Hashnode articles directly
-                from Figma designs. Streamlines the workflow for content
-                creators.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">Figma API</span>
-                <span class="tech-tag">Hashnode</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i> Website
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Coding Platforms Section -->
-      <section class="section">
-        <div class="coding-platforms-container">
-          <div class="coding-platforms">
-            <!-- GitHub -->
-            <a
-              href="https://github.com/monarch-009"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </a>
-
-            <!-- LeetCode -->
-            <a
-              href="https://leetcode.com/u/monarch_009/"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-code"></i>
-              <span>LeetCode</span>
-            </a>
-
-            <!-- HackerRank -->
-            <a
-              href="https://www.hackerrank.com/profile/monarch_009"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-hackerrank"></i>
-              <span>HackerRank</span>
-            </a>
-
-            <!-- CodeChef -->
-            <a
-              href="https://www.codechef.com/users/monarch_009"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-utensils"></i>
-              <span>CodeChef</span>
-            </a>
-
-            <!-- Codeforces -->
-            <a
-              href="https://codeforces.com/profile/adityasinghmoni"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-trophy"></i>
-              <span>Codeforces</span>
-            </a>
-
-            <!-- GeeksforGeeks -->
-            <a
-              href="https://www.geeksforgeeks.org/user/monarch_009/"
-              class="coding-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-laptop-code"></i>
-              <span>GeeksforGeeks</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section">
-        <span class="contact-badge">Contact</span>
-        <h2 class="contact-title">Get in Touch</h2>
-        <p class="contact-text">
-          Want to chat? Just shoot me a dm with a
-          <a
-            href="https://x.com/monarchword"
-            target="_blank"
-            rel="noopener noreferrer"
-            >direct question on twitter</a
-          >
-          and I'll respond whenever I can!
-        </p>
-      </section>
-
-      <!-- Social Links -->
-      <div class="social-links-container">
-        <div class="social-links">
-          <a href="#" class="social-link" title="Home" onclick="scrollToTop(event)">
-            <i class="fas fa-home"></i> <span>Home</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aditya-raj21/"
-            class="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-          >
-            <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
-          </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&to=adityasinghmoni@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link"
-            title="Email"
-          >
-            <i class="fas fa-envelope"></i> <span>Email</span>
-          </a>
-
-          <a
-            href="https://twitter.com/monarchword"
-            class="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Twitter"
-          >
-            <i class="fab fa-x-twitter"></i> <span>Twitter</span>
-          </a>
-          <button
-            class="theme-toggle"
-            onclick="toggleTheme()"
-            title="Toggle Theme"
-          >
-            <i class="fas fa-sun" id="theme-icon"></i>
-          </button>
-        </div>
-      </div>
+      <div id="header-container"></div>
+      <div id="about-container"></div>
+      <div id="experience-container"></div>
+      <div id="education-container"></div>
+      <div id="skills-container"></div>
+      <div id="projects-container"></div>
+      <div id="platforms-container"></div>
+      <div id="contact-container"></div>
+      <div id="footer-container"></div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- warning for local file protocol -->
+    <script>
+      if (window.location.protocol === "file:") {
+        const warning = document.createElement("div");
+        warning.style.position = "fixed";
+        warning.style.top = "0";
+        warning.style.left = "0";
+        warning.style.width = "100%";
+        warning.style.background = "#ffcc00";
+        warning.style.color = "black";
+        warning.style.padding = "10px";
+        warning.style.textAlign = "center";
+        warning.style.zIndex = "9999";
+        warning.innerText =
+          "⚠️ You are opening this file directly. For components to load, please use a local server (e.g. Live Server).";
+        document.body.prepend(warning);
+      }
+    </script>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/loader.js"></script>
+    <script src="../data/projectDetail.js"></script>
+    <script src="../data/quotes.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+/* Global Styles & Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --secondary-text: #555555;
+  --card-bg: #f8f9fa;
+  --border-color: #e9ecef;
+  --accent-color: #007bff;
+  --hover-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --secondary-text: #cccccc;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --accent-color: #4dabf7;
+  --hover-bg: #3a3a3a;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.projects-title,
+.modal-title {
+  font-family: var(--font-heading);
+}
